@@ -17,7 +17,7 @@ public class Customer {
 
     @Column(name = "customerId")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+   // @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
     private String email;
