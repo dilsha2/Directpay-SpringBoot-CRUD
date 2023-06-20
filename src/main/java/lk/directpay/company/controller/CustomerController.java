@@ -13,8 +13,12 @@ import java.util.ArrayList;
 @CrossOrigin
 public class CustomerController {
 
+    private final CustomerService service;
+
     @Autowired
-    private CustomerService service;
+    public CustomerController(CustomerService service) {
+        this.service = service;
+    }
 
 
     @PostMapping

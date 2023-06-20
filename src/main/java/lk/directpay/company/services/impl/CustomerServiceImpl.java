@@ -16,11 +16,14 @@ import java.util.ArrayList;
 @Transactional
 public class CustomerServiceImpl implements CustomerService {
 
-    @Autowired
-    private CustomerRepo repo;
+    private final CustomerRepo repo;
+    private final ModelMapper mapper;
 
     @Autowired
-    private ModelMapper mapper;
+    public CustomerServiceImpl(CustomerRepo repo, ModelMapper mapper) {
+        this.repo = repo;
+        this.mapper = mapper;
+    }
 
     @Override
     public void addCustomer(CustomerDTO dto) {
