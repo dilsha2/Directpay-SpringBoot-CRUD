@@ -1,4 +1,7 @@
 package lk.directpay.company.repositories;
 
-public interface CustomerRepo {
+import lk.directpay.company.entities.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CustomerRepo extends JpaRepository<Customer,Long> {
 }
