@@ -1,4 +1,4 @@
-package lk.directpay.company.service;
+package lk.directpay.company.services;
 
 import lk.directpay.company.dto.CustomerDTO;
 

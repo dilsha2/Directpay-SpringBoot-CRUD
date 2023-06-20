@@ -1,9 +1,9 @@
-package lk.directpay.company.service.impl;
+package lk.directpay.company.services.impl;
 
 import lk.directpay.company.dto.CustomerDTO;
 import lk.directpay.company.entities.Customer;
 import lk.directpay.company.repositories.CustomerRepo;
-import lk.directpay.company.service.CustomerService;
+import lk.directpay.company.services.CustomerService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;

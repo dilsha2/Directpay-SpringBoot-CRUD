@@ -1,7 +1,7 @@
 package lk.directpay.company.controller;
 
 import lk.directpay.company.dto.CustomerDTO;
-import lk.directpay.company.service.CustomerService;
+import lk.directpay.company.services.CustomerService;
 import lk.directpay.company.utilities.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
