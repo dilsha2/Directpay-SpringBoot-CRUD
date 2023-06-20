@@ -6,11 +6,11 @@ import java.util.ArrayList;
 
 public interface CustomerService {
 
-    public void addCustomer(CustomerDTO dto);
+    void addCustomer(CustomerDTO dto);
 
-    public void deleteCustomer(Long id);
+    void deleteCustomer(Long id);
 
-    public void updateCustomer(CustomerDTO dto);
+    void updateCustomer(CustomerDTO dto);
 
-    public ArrayList<CustomerDTO> getAllCustomers();
+    ArrayList<CustomerDTO> getAllCustomers();
 }
