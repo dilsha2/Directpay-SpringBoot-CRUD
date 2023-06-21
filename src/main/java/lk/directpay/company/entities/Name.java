@@ -9,11 +9,7 @@ import java.util.HashMap;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Country {
+public class Name {
 
-    private String name;
-    private String capital;
-    private long population;
-
-//    private HashMap<String,Object> name;
+    private Country country;
 }
