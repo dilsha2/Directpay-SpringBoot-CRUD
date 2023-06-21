@@ -18,7 +18,7 @@ public class CountryController {
     }
 
     @GetMapping("/currency/{currencyCode}")
-    public Country getCountryByCurrency(@PathVariable String currencyCode) {
-        return countryService.getCountryByCurrency(currencyCode);
+    public Country[] getCountryByCurrency(@PathVariable String currencyCode) {
+        return countryService.getCountriesByCurrency(currencyCode);
     }
 }

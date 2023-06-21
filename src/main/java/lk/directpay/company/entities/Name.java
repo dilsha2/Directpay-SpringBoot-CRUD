@@ -11,5 +11,6 @@ import java.util.HashMap;
 @Data
 public class Name {
 
-    private Country country;
+    private String common;
+    private String official;
 }
