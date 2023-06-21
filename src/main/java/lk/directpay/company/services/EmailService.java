@@ -21,7 +21,7 @@ public class EmailService {
     }
 
     public void sendEmail(Email email){
-        String url = "https://sendgrid.com/solutions/email-api/";
+        String url = "https://api.sendgrid.com/v3/mail/send";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setBearerAuth("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");
