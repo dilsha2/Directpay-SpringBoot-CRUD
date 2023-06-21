@@ -14,8 +14,6 @@ import javax.persistence.Id;
 @Data
 public class Item {
 
-//    @Column(name = "itemCode")
-//    @Id
     private Long itemCode;
     private String itemName;
 }
