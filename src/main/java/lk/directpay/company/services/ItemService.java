@@ -18,7 +18,7 @@ public class ItemService {
     }
 
     public Item getItemByCode(Long itemCode) {
-        String url = "http://localhost:8080/items/{code}";
+        String url = "http://localhost:8080/items/" + 1;
 
         ResponseEntity<Item> response = restTemplate.exchange(url, HttpMethod.GET, null, Item.class, itemCode);
 
