@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class Email {
 
-    private String personalEmail;
+    private String personalizations;
     private String subject;
     private String from;
-    private String body;
+    private String content;
 }
