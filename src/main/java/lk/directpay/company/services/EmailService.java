@@ -23,6 +23,8 @@ public class EmailService {
     public void sendEmail(Email email){
         String url = "https://api.sendgrid.com/v3/mail/send";
 
+        String url2 = "https://api.sendgrid.com/v3/mail/send";
+
         HttpHeaders headers = new HttpHeaders();
         headers.setBearerAuth("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");
         headers.set("Content-Type", "application/json");
@@ -35,5 +37,6 @@ public class EmailService {
             throw new RuntimeException("Failed to send email: " + response.getBody());
         }
     }
+
 }
 
