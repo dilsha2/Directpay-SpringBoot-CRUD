@@ -3,12 +3,11 @@ package lk.directpay.company.services;
 import lk.directpay.company.entities.Email;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
-import org.springframework.http.HttpHeaders;
 
 @Service
 public class EmailService {
@@ -20,10 +19,8 @@ public class EmailService {
         this.restTemplate = restTemplate;
     }
 
-    public void sendEmail(Email email){
+    public void sendEmail(Email email) {
         String url = "https://api.sendgrid.com/v3/mail/send";
-
-        String url2 = "https://api.sendgrid.com/v3/mail/send";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setBearerAuth("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");
